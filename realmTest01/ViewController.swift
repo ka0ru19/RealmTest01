@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        initRealmData()
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -34,6 +37,11 @@ class ViewController: UIViewController {
         if segue.identifier == "toAddVC" {
             print("AddVCに遷移します")
         }
+    }
+    
+    // realmデータベースを初期化(テストアプリのため、この関数で擬似的に既にデータベースがあるような状況を作る)
+    func initRealmData() {
+        
     }
 
 }
