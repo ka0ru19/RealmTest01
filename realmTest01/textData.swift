@@ -9,7 +9,8 @@
 import UIKit
 import RealmSwift
 
-class textData: Object {
+class TextData: Object {
     dynamic var text = ""
     dynamic var date: Date = Date()
+
 }
