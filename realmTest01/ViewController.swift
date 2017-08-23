@@ -47,6 +47,9 @@ class ViewController: UIViewController {
         
         textDataArray = realmTextDataArray as [TextData]
         
+        // 更新日時の最近順に並べ替え(最新が上)
+        textDataArray.sort { $0.date > $1.date }
+        
         tableView.reloadData()
     }
 
