@@ -15,6 +15,7 @@
 		63B8FA261F4DC6BC0023954D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B8FA241F4DC6BC0023954D /* LaunchScreen.storyboard */; };
 		63FAF2EB1F4DC7FD00E5768E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF2EA1F4DC7FD00E5768E /* AddViewController.swift */; };
 		63FAF2ED1F4DD0A900E5768E /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF2EC1F4DD0A900E5768E /* TextData.swift */; };
+		63FAF2EF1F4DDD2300E5768E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAF2EE1F4DDD2300E5768E /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		63B8FA271F4DC6BC0023954D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63FAF2EA1F4DC7FD00E5768E /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		63FAF2EC1F4DD0A900E5768E /* TextData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
+		63FAF2EE1F4DDD2300E5768E /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9544BB3CF1481FDDE9D82B51 /* Pods_realmTest01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realmTest01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DC986533DA1E61BADDC85C /* Pods-realmTest01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realmTest01.release.xcconfig"; path = "Pods/Target Support Files/Pods-realmTest01/Pods-realmTest01.release.xcconfig"; sourceTree = "<group>"; };
 		C1FE67FF085D02A85AA8C0BF /* Pods-realmTest01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realmTest01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-realmTest01/Pods-realmTest01.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				63B8FA1D1F4DC6BC0023954D /* ViewController.swift */,
 				63FAF2EC1F4DD0A900E5768E /* TextData.swift */,
 				63FAF2EA1F4DC7FD00E5768E /* AddViewController.swift */,
+				63FAF2EE1F4DDD2300E5768E /* EditViewController.swift */,
 				63B8FA1F1F4DC6BC0023954D /* Main.storyboard */,
 				63B8FA221F4DC6BC0023954D /* Assets.xcassets */,
 				63B8FA241F4DC6BC0023954D /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FAF2EF1F4DDD2300E5768E /* EditViewController.swift in Sources */,
 				63FAF2ED1F4DD0A900E5768E /* TextData.swift in Sources */,
 				63B8FA1E1F4DC6BC0023954D /* ViewController.swift in Sources */,
 				63B8FA1C1F4DC6BC0023954D /* AppDelegate.swift in Sources */,

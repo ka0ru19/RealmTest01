@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let originTextArray = ["あ", "い", "うえ"]
     var textDataArray: [TextData] = []
+    var selectedIndex : Int!
     
     // Realmのインスタンスを取得
     let realm = try! Realm()
@@ -62,6 +63,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toAddVC" {
             print("AddVCに遷移します")
+        } else if segue.identifier == "toEditVC" {
+            print("EditVCに遷移します")
+            let editVC = segue.destination as! EditViewController
+            editVC.objectIndex = self.selectedIndex
         }
     }
     
@@ -102,7 +107,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let num = indexPath.row
-        print("indexPath.row: \(num), text: \(textDataArray[num].text) が選択されました")
+        selectedIndex = indexPath.row
+        print("indexPath.row: \(selectedIndex), text: \(textDataArray[selectedIndex].text) が選択されました")
+        performSegue(withIdentifier: "toEditVC", sender: nil)
     }
 }
