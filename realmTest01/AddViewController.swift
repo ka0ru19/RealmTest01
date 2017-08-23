@@ -10,6 +10,9 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,9 @@ class AddViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func saveButtonTapped() {
+        print("保存ボタンが押されました")
+    }
 
     /*
     // MARK: - Navigation
