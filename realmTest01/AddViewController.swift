@@ -26,6 +26,19 @@ class AddViewController: UIViewController {
     
     @IBAction func saveButtonTapped() {
         print("保存ボタンが押されました")
+        guard let text = textField.text else {
+            // もしテキストが未入力だったらreturnして関数を抜ける
+            print("保存失敗: テキスト未入力のため")
+            return
+        }
+        
+        if text.characters.count == 0 {
+            // もしテキストが""の場合にも関数を抜ける. 条件式は text == "" でも可、同じ意味。
+            print("保存失敗: テキストに有効な文字がないため")
+            return
+        }
+        
+        
     }
 
     /*
