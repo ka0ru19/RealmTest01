@@ -25,25 +25,39 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="dLM-1b-8ol">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dLM-1b-8ol" id="UXQ-e2-sXl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qik-kE-IT4"/>
+                    <navigationItem key="navigationItem" id="Qik-kE-IT4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XhU-JA-fjU"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="4qf-yz-mLQ" kind="push" id="SgK-ch-sji"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989.60000000000002" y="-545.57721139430294"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="CRY-Ci-mze">
+            <objects>
+                <viewController id="4qf-yz-mLQ" customClass="AddViewController" customModule="realmTest01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="biC-jI-nuR"/>
+                        <viewControllerLayoutGuide type="bottom" id="8PO-rC-Fmj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QuW-jT-KVe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ueh-vB-ZOf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjo-Ts-KjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="-546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FeF-Lc-CAp">
