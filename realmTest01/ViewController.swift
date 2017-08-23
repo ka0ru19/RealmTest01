@@ -45,6 +45,8 @@ class ViewController: UIViewController {
         }
         
         textDataArray = realmTextDataArray as [TextData]
+        
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
