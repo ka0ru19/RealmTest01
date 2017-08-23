@@ -28,6 +28,7 @@ class EditViewController: UIViewController {
         
         object = realmTextDataArray[objectIndex]
         
+        // もとのテキストはplaceholderにセットしておく
         textField.placeholder = object.text
 
 
@@ -55,11 +56,12 @@ class EditViewController: UIViewController {
         
         let newTextData = TextData()
         newTextData.text = inputText
-        newTextData.date = object.date
+        newTextData.date = object.date // dateは古いdeteを引き継ぐ
         
         try! realm.write {
-            realm.delete(object)
-            realm.add(newTextData)
+            realm.delete(object) // 古いTextDataを削除
+            realm.add(newTextData) // 新しいデータを代入
+            // プライマリキーを設定しておけば1行でupdateができるがプライマリキーの設定に何行も要するので今回は簡単に書くために、削除して追加する方法を採用した
         }
     }
     

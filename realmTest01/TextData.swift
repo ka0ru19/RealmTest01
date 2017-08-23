@@ -11,6 +11,6 @@ import RealmSwift
 
 class TextData: Object {
     dynamic var text = ""
-    dynamic var date: Date = Date()
+    dynamic var date: Date = Date() // このオブジェクトの作成日時を管理しておく
 
 }
