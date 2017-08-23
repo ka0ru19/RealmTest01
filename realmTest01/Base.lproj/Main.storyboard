@@ -40,11 +40,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qik-kE-IT4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XhU-JA-fjU"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XhU-JA-fjU">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="9I5-uT-3q3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="DXX-dw-e6B" id="EDW-BY-w0x"/>
-                        <segue destination="4qf-yz-mLQ" kind="push" id="SgK-ch-sji"/>
+                        <segue destination="4qf-yz-mLQ" kind="push" identifier="toAddVC" id="SgK-ch-sji"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
