@@ -43,6 +43,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XhU-JA-fjU"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="DXX-dw-e6B" id="EDW-BY-w0x"/>
                         <segue destination="4qf-yz-mLQ" kind="push" id="SgK-ch-sji"/>
                     </connections>
                 </viewController>
