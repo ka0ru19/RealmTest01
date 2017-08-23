@@ -43,5 +43,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = textArray[indexPath.row]
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let num = indexPath.row
+        print("indexPath.row: \(num), text: \(textArray[num]) が選択されました")
+    }
 }
